@@ -58,6 +58,17 @@ git的每次push都是在分支上，无法做到多分支提交
 git pull == fetch + merge
 pull会自动拉取分支的最新变动然后合并，而fetch并不会有合并的动作
 如果让vsc的git模块管理一个没有任何commit的repo(这是工作区的第二个git仓库)这也许不会成功
+
+如果无法操作一个工作区的多个文件夹的git仓库,这完全是因为vsc可视化的界面的问题,因为它在连接的时候混乱了
+solve:ctrl + shift + p,然后输入reload window,这可以解决vsc可视化界面的很多问题
+
+面对merge时候的冲突,你可以在编辑器里面一点点选择倾向的段落,也可以在git管理面板选择一次性全部倾向
+git checkout --theirs src/mod   这样可以默认处理特定的模块,如果不输入位置就是默认全部冲突文件
+
+生成库
+动态库是有可执行权限的，而静态库没有
+我们在发布的时候只需要发布库文件和inc文件
+库文件和src文件的区别就是一个是二进制一个是源码，仅此而已
 ]]
 
 set(CMAKE_CXX_STANDARD 17)
@@ -65,18 +76,21 @@ cmake_minimum_required(VERSION 3.28.3)
 project(test)
 # set(SRC_LIST add.cpp sub.cpp main.cpp) # 设置源文件变量SRC_LIST默认是当前文件夹
 
-# 我在这里拼错了变量名
-set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin) #设置bin路径,根据你自己的路径修改
-# add_executable(app ${SRC_LIST})
+# 我在这里拼错了变量名，指定输出位置
+# set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin) #设置bin路径,根据你自己的路径修改
 #指定头文件的路径
 include_directories(${PROJECT_SOURCE_DIR}/inc) # 他的影响是目录级别的
 # target_include_directories(app PUBLIC .) # 他的影响是应用级别的,PUBLIC等决定它的衍生文件会被影响到什么程度
+# 找源文件的位置设置变量
 file(GLOB SRC ${PROJECT_SOURCE_DIR}/src/*.cpp)
-list(REMOVE_ITEM SRC "${PROJECT_SOURCE_DIR}/src/sample.cpp")
+# list(REMOVE_ITEM SRC "${PROJECT_SOURCE_DIR}/src/sample.cpp")
 # add_executable(app ${SRC})
 
-# 1. 主程序
-add_executable(${PROJECT_NAME} ${SRC})
+# 可执行文件生成
+# add_executable(${PROJECT_NAME} ${SRC})
 
 # 2. 给这个单文件单独建一个可执行文件，方便你以后调试它
-add_executable(sample_test "${PROJECT_SOURCE_DIR}/src/sample.cpp")
+# add_executable(sample_test "${PROJECT_SOURCE_DIR}/src/sample.cpp")
+
+#默认路径是${PROJECT_SOURCE_DIR}
+add_library(${PROJECT_NAME} ${SRC})
