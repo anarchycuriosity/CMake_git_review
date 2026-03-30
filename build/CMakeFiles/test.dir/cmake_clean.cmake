@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "/home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/bin/test"
-  "/home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/bin/test.pdb"
+  "/home/curiosity/CMakeLists-test/CMake_only_test_content/lib/libtest.pdb"
+  "/home/curiosity/CMakeLists-test/CMake_only_test_content/lib/libtest.so"
   "CMakeFiles/test.dir/src/add.cpp.o"
   "CMakeFiles/test.dir/src/add.cpp.o.d"
-  "CMakeFiles/test.dir/src/main.cpp.o"
-  "CMakeFiles/test.dir/src/main.cpp.o.d"
+  "CMakeFiles/test.dir/src/sample.cpp.o"
+  "CMakeFiles/test.dir/src/sample.cpp.o.d"
   "CMakeFiles/test.dir/src/sub.cpp.o"
   "CMakeFiles/test.dir/src/sub.cpp.o.d"
 )

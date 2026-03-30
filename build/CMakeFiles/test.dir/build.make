@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/curiosity/CMakeLists-test/vsc-cpp-template-wsl
+CMAKE_SOURCE_DIR = /home/curiosity/CMakeLists-test/CMake_only_test_content
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/build
+CMAKE_BINARY_DIR = /home/curiosity/CMakeLists-test/CMake_only_test_content/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test.dir/depend.make
@@ -70,66 +70,66 @@ include CMakeFiles/test.dir/progress.make
 include CMakeFiles/test.dir/flags.make
 
 CMakeFiles/test.dir/src/add.cpp.o: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/src/add.cpp.o: /home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/src/add.cpp
+CMakeFiles/test.dir/src/add.cpp.o: /home/curiosity/CMakeLists-test/CMake_only_test_content/src/add.cpp
 CMakeFiles/test.dir/src/add.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/src/add.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/add.cpp.o -MF CMakeFiles/test.dir/src/add.cpp.o.d -o CMakeFiles/test.dir/src/add.cpp.o -c /home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/src/add.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/curiosity/CMakeLists-test/CMake_only_test_content/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/src/add.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/add.cpp.o -MF CMakeFiles/test.dir/src/add.cpp.o.d -o CMakeFiles/test.dir/src/add.cpp.o -c /home/curiosity/CMakeLists-test/CMake_only_test_content/src/add.cpp
 
 CMakeFiles/test.dir/src/add.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/src/add.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/src/add.cpp > CMakeFiles/test.dir/src/add.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/curiosity/CMakeLists-test/CMake_only_test_content/src/add.cpp > CMakeFiles/test.dir/src/add.cpp.i
 
 CMakeFiles/test.dir/src/add.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/add.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/src/add.cpp -o CMakeFiles/test.dir/src/add.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/curiosity/CMakeLists-test/CMake_only_test_content/src/add.cpp -o CMakeFiles/test.dir/src/add.cpp.s
 
-CMakeFiles/test.dir/src/main.cpp.o: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/src/main.cpp.o: /home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/src/main.cpp
-CMakeFiles/test.dir/src/main.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/main.cpp.o -MF CMakeFiles/test.dir/src/main.cpp.o.d -o CMakeFiles/test.dir/src/main.cpp.o -c /home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/src/main.cpp
+CMakeFiles/test.dir/src/sample.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/sample.cpp.o: /home/curiosity/CMakeLists-test/CMake_only_test_content/src/sample.cpp
+CMakeFiles/test.dir/src/sample.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/curiosity/CMakeLists-test/CMake_only_test_content/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/src/sample.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/sample.cpp.o -MF CMakeFiles/test.dir/src/sample.cpp.o.d -o CMakeFiles/test.dir/src/sample.cpp.o -c /home/curiosity/CMakeLists-test/CMake_only_test_content/src/sample.cpp
 
-CMakeFiles/test.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/src/main.cpp > CMakeFiles/test.dir/src/main.cpp.i
+CMakeFiles/test.dir/src/sample.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/src/sample.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/curiosity/CMakeLists-test/CMake_only_test_content/src/sample.cpp > CMakeFiles/test.dir/src/sample.cpp.i
 
-CMakeFiles/test.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/src/main.cpp -o CMakeFiles/test.dir/src/main.cpp.s
+CMakeFiles/test.dir/src/sample.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/sample.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/curiosity/CMakeLists-test/CMake_only_test_content/src/sample.cpp -o CMakeFiles/test.dir/src/sample.cpp.s
 
 CMakeFiles/test.dir/src/sub.cpp.o: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/src/sub.cpp.o: /home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/src/sub.cpp
+CMakeFiles/test.dir/src/sub.cpp.o: /home/curiosity/CMakeLists-test/CMake_only_test_content/src/sub.cpp
 CMakeFiles/test.dir/src/sub.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/src/sub.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/sub.cpp.o -MF CMakeFiles/test.dir/src/sub.cpp.o.d -o CMakeFiles/test.dir/src/sub.cpp.o -c /home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/src/sub.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/curiosity/CMakeLists-test/CMake_only_test_content/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/src/sub.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/sub.cpp.o -MF CMakeFiles/test.dir/src/sub.cpp.o.d -o CMakeFiles/test.dir/src/sub.cpp.o -c /home/curiosity/CMakeLists-test/CMake_only_test_content/src/sub.cpp
 
 CMakeFiles/test.dir/src/sub.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/src/sub.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/src/sub.cpp > CMakeFiles/test.dir/src/sub.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/curiosity/CMakeLists-test/CMake_only_test_content/src/sub.cpp > CMakeFiles/test.dir/src/sub.cpp.i
 
 CMakeFiles/test.dir/src/sub.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/sub.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/src/sub.cpp -o CMakeFiles/test.dir/src/sub.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/curiosity/CMakeLists-test/CMake_only_test_content/src/sub.cpp -o CMakeFiles/test.dir/src/sub.cpp.s
 
 # Object files for target test
 test_OBJECTS = \
 "CMakeFiles/test.dir/src/add.cpp.o" \
-"CMakeFiles/test.dir/src/main.cpp.o" \
+"CMakeFiles/test.dir/src/sample.cpp.o" \
 "CMakeFiles/test.dir/src/sub.cpp.o"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
 
-/home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/bin/test: CMakeFiles/test.dir/src/add.cpp.o
-/home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/bin/test: CMakeFiles/test.dir/src/main.cpp.o
-/home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/bin/test: CMakeFiles/test.dir/src/sub.cpp.o
-/home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/bin/test: CMakeFiles/test.dir/build.make
-/home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/bin/test: CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable /home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/bin/test"
+/home/curiosity/CMakeLists-test/CMake_only_test_content/lib/libtest.so: CMakeFiles/test.dir/src/add.cpp.o
+/home/curiosity/CMakeLists-test/CMake_only_test_content/lib/libtest.so: CMakeFiles/test.dir/src/sample.cpp.o
+/home/curiosity/CMakeLists-test/CMake_only_test_content/lib/libtest.so: CMakeFiles/test.dir/src/sub.cpp.o
+/home/curiosity/CMakeLists-test/CMake_only_test_content/lib/libtest.so: CMakeFiles/test.dir/build.make
+/home/curiosity/CMakeLists-test/CMake_only_test_content/lib/libtest.so: CMakeFiles/test.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/curiosity/CMakeLists-test/CMake_only_test_content/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library /home/curiosity/CMakeLists-test/CMake_only_test_content/lib/libtest.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/test.dir/build: /home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/bin/test
+CMakeFiles/test.dir/build: /home/curiosity/CMakeLists-test/CMake_only_test_content/lib/libtest.so
 .PHONY : CMakeFiles/test.dir/build
 
 CMakeFiles/test.dir/clean:
@@ -137,6 +137,6 @@ CMakeFiles/test.dir/clean:
 .PHONY : CMakeFiles/test.dir/clean
 
 CMakeFiles/test.dir/depend:
-	cd /home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/curiosity/CMakeLists-test/vsc-cpp-template-wsl /home/curiosity/CMakeLists-test/vsc-cpp-template-wsl /home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/build /home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/build /home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/build/CMakeFiles/test.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/curiosity/CMakeLists-test/CMake_only_test_content/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/curiosity/CMakeLists-test/CMake_only_test_content /home/curiosity/CMakeLists-test/CMake_only_test_content /home/curiosity/CMakeLists-test/CMake_only_test_content/build /home/curiosity/CMakeLists-test/CMake_only_test_content/build /home/curiosity/CMakeLists-test/CMake_only_test_content/build/CMakeFiles/test.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/test.dir/depend
 

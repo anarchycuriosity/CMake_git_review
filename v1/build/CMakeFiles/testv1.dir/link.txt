@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/testv1.dir/main.cpp.o -o testv1   -L/home/curiosity/CMakeLists-test/CMake_only_test_content/v1/lib_a 

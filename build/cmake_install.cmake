@@ -1,4 +1,4 @@
-# Install script for directory: /home/curiosity/CMakeLists-test/vsc-cpp-template-wsl
+# Install script for directory: /home/curiosity/CMakeLists-test/CMake_only_test_content
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/curiosity/CMakeLists-test/CMake_only_test_content/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

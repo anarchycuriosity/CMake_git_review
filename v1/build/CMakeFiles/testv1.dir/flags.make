@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/inc
+CXX_INCLUDES = -I/home/curiosity/CMakeLists-test/CMake_only_test_content/v1/inc
 
 CXX_FLAGS = 
 

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/curiosity/CMakeLists-test/vsc-cpp-template-wsl
+CMAKE_SOURCE_DIR = /home/curiosity/CMakeLists-test/CMake_only_test_content
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/build
+CMAKE_BINARY_DIR = /home/curiosity/CMakeLists-test/CMake_only_test_content/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/build/CMakeFiles /home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/curiosity/CMakeLists-test/CMake_only_test_content/build/CMakeFiles /home/curiosity/CMakeLists-test/CMake_only_test_content/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/curiosity/CMakeLists-test/CMake_only_test_content/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,19 +129,6 @@ test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
 .PHONY : test/fast
 
-#=============================================================================
-# Target rules for targets named sample_test
-
-# Build rule for target.
-sample_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sample_test
-.PHONY : sample_test
-
-# fast build rule for target.
-sample_test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample_test.dir/build.make CMakeFiles/sample_test.dir/build
-.PHONY : sample_test/fast
-
 src/add.o: src/add.cpp.o
 .PHONY : src/add.o
 
@@ -166,36 +153,12 @@ src/add.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/add.cpp.s
 .PHONY : src/add.cpp.s
 
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
-
-# target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
-
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
-
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
-
 src/sample.o: src/sample.cpp.o
 .PHONY : src/sample.o
 
 # target to build an object file
 src/sample.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample_test.dir/build.make CMakeFiles/sample_test.dir/src/sample.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/sample.cpp.o
 .PHONY : src/sample.cpp.o
 
 src/sample.i: src/sample.cpp.i
@@ -203,7 +166,7 @@ src/sample.i: src/sample.cpp.i
 
 # target to preprocess a source file
 src/sample.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample_test.dir/build.make CMakeFiles/sample_test.dir/src/sample.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/sample.cpp.i
 .PHONY : src/sample.cpp.i
 
 src/sample.s: src/sample.cpp.s
@@ -211,7 +174,7 @@ src/sample.s: src/sample.cpp.s
 
 # target to generate assembly for a file
 src/sample.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample_test.dir/build.make CMakeFiles/sample_test.dir/src/sample.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/sample.cpp.s
 .PHONY : src/sample.cpp.s
 
 src/sub.o: src/sub.cpp.o
@@ -246,14 +209,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... sample_test"
 	@echo "... test"
 	@echo "... src/add.o"
 	@echo "... src/add.i"
 	@echo "... src/add.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
 	@echo "... src/sample.o"
 	@echo "... src/sample.i"
 	@echo "... src/sample.s"

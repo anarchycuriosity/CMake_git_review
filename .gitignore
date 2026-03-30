@@ -1,8 +1,9 @@
 # 1. 忽略 bin 文件夹下的所有内容
 bin/*
-
+lib/*
 # 2. 但是不要忽略 .gitkeep 文件
 !bin/.gitkeep
+!lib/.gitkeep
 obj/
 *.obj
 *.pdb

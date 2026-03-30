@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/src/add.cpp" "CMakeFiles/test.dir/src/add.cpp.o" "gcc" "CMakeFiles/test.dir/src/add.cpp.o.d"
-  "/home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/src/main.cpp" "CMakeFiles/test.dir/src/main.cpp.o" "gcc" "CMakeFiles/test.dir/src/main.cpp.o.d"
-  "/home/curiosity/CMakeLists-test/vsc-cpp-template-wsl/src/sub.cpp" "CMakeFiles/test.dir/src/sub.cpp.o" "gcc" "CMakeFiles/test.dir/src/sub.cpp.o.d"
+  "/home/curiosity/CMakeLists-test/CMake_only_test_content/src/add.cpp" "CMakeFiles/test.dir/src/add.cpp.o" "gcc" "CMakeFiles/test.dir/src/add.cpp.o.d"
+  "/home/curiosity/CMakeLists-test/CMake_only_test_content/src/sample.cpp" "CMakeFiles/test.dir/src/sample.cpp.o" "gcc" "CMakeFiles/test.dir/src/sample.cpp.o.d"
+  "/home/curiosity/CMakeLists-test/CMake_only_test_content/src/sub.cpp" "CMakeFiles/test.dir/src/sub.cpp.o" "gcc" "CMakeFiles/test.dir/src/sub.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
