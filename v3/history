@@ -1,0 +1,20 @@
+  647  cmake ..
+  648  make
+  649  rm * -rf
+  650  ls
+  651  cmake ..
+  652  make
+  653  clear
+  654  cp {bin,build,inc,lib,src} v1/
+  655  cd ..
+  656  mkdir v1
+  657  cp {bin,build,inc,lib,src} -r v1/
+  658  cd va
+  659  cd v1
+  660  cp ../CMakeLists.txt 
+  661  cp ../CMakeLists.txt ./
+  662  rm -r ./src/
+  663  hitory
+  664  history
+  665  touch history
+  666  history | tail -n 20 > history

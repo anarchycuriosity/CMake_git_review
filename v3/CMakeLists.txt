@@ -78,21 +78,6 @@ git remote set-url origin <新的url>
 当第一次执行git push -u origin main
 之后只要执行push即可
 带-的是配置(参数/选项),不带-的比如add和set-url是动作(子命令)
-
-message(重要程度 字符串)
-使用set拼接字符串和变量，set会把第一个变量的数据进行覆盖
-使用list对字符串进行追加
-list类型的本质其实就是字符串，因为cmake中没有列表的类型
-list(APPEND a b c)把b c追加到a
-底层管理中会有分号间隔，但如果通过message打印出来其实没有
-这里的分号管理其实就引出了删除的功能
-其实之前为了解决sample的冲突已经接触过了
-list(REMOVED_ITEM SRC "${SRC}/main.cpp")1参数2从哪里删除3删除什么
-参数三必须是绝对路径，因为大概率你拼接的时候使用的变量${PROJECT_SOURCE_DIR}就是绝对的
-
-list除了删除和追加，也可以获取list的长度
-list(LENGTH list 变量a)长度会被储存在变量a中，类型是字符串而非整型
-list(GET <list> 索引)0是第一个，-1是倒数第一个
 ]]
 
 set(CMAKE_CXX_STANDARD 17)
@@ -125,8 +110,9 @@ include_directories(${PROJECT_SOURCE_DIR}/inc) # 他的影响是目录级别的
 #现在我们已经生成了库文件，可以把add_library删掉了
 # 开始连接库文件
 file(GLOB SRC ${PROJECT_SOURCE_DIR}/main.cpp)
-link_libraries(${PROJECT_NAME})# 不需要写全名字
-link_directories(${PROJECT_SOURCE_DIR}/lib_a)
-
+# link_libraries(${PROJECT_NAME})# 不需要写全名字
+link_directories(${PROJECT_SOURCE_DIR}/lib_so)
 # add_executable(${PROJECT_NAME} ${SRC})不能连接自己
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 add_executable(app ${SRC})
+target_link_libraries(app ${PROJECT_NAME})# 链接动态库
