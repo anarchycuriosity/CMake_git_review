@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/app.dir/main.cpp.o -o app   -L/home/curiosity/tests/CMakeLists-test/CMake_git_review/v1/lib_a  -Wl,-rpath,/home/curiosity/tests/CMakeLists-test/CMake_git_review/v1/lib_a -ltestv1 

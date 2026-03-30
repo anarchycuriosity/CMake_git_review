@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/curiosity/tests/CMakeLists-test/CMake_git_review/v1/inc
+CXX_INCLUDES = -I/home/curiosity/tests/CMakeLists-test/CMake_git_review/v2/inc
 
 CXX_FLAGS = 
 

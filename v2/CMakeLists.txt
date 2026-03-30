@@ -110,8 +110,9 @@ include_directories(${PROJECT_SOURCE_DIR}/inc) # 他的影响是目录级别的
 #现在我们已经生成了库文件，可以把add_library删掉了
 # 开始连接库文件
 file(GLOB SRC ${PROJECT_SOURCE_DIR}/main.cpp)
-link_libraries(${PROJECT_NAME})# 不需要写全名字
-link_directories(${PROJECT_SOURCE_DIR}/lib_a)
-
+# link_libraries(${PROJECT_NAME})# 不需要写全名字
+link_directories(${PROJECT_SOURCE_DIR}/lib_so)
 # add_executable(${PROJECT_NAME} ${SRC})不能连接自己
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 add_executable(app ${SRC})
+target_link_libraries(app ${PROJECT_NAME})# 链接动态库

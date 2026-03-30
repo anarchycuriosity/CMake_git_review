@@ -1,7 +1,7 @@
-CMakeFiles/testv1.dir/main.cpp.o: \
- /home/curiosity/CMakeLists-test/CMake_only_test_content/v1/main.cpp \
+CMakeFiles/app.dir/main.cpp.o: \
+ /home/curiosity/tests/CMakeLists-test/CMake_git_review/v2/main.cpp \
  /usr/include/stdc-predef.h \
- /home/curiosity/CMakeLists-test/CMake_only_test_content/v1/inc/head.h \
+ /home/curiosity/tests/CMakeLists-test/CMake_git_review/v2/inc/head.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
