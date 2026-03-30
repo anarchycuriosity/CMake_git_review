@@ -1,0 +1,3 @@
+/home/curiosity/CMakeLists-test/CMake_only_test_content/v4/build/CMakeFiles/DefineTest.dir
+/home/curiosity/CMakeLists-test/CMake_only_test_content/v4/build/CMakeFiles/edit_cache.dir
+/home/curiosity/CMakeLists-test/CMake_only_test_content/v4/build/CMakeFiles/rebuild_cache.dir

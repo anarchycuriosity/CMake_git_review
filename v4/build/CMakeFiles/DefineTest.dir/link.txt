@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/DefineTest.dir/Dtest.cpp.o -o /home/curiosity/CMakeLists-test/CMake_only_test_content/v4/bin/DefineTest 
